@@ -21,6 +21,8 @@ public class LoginPage{
 	private By login=By.xpath("//input[@value='Login']");	
 	private By forgotPwd = By.linkText("Forgotten Password");
 	private By registerLink = By.linkText("Register");
+	private By nathiya = By.linkText("nathiya");
+
 
 
 	//3.page class comstructor
