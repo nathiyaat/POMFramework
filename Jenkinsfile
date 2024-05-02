@@ -41,8 +41,8 @@ pipeline
         stage('Regression Automation Tests') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Dec2023POMSeries.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_regression.xml -Denv=qa"
+                    git 'https://github.com/nathiyaat/POMFramework.git'
+                    bat "mvn clean test -Dsurefire.suiteXmlFile=src/test/resources/testrunners/testng_regression.xml -Denv=qa"
                     
                 }
             }
@@ -85,8 +85,8 @@ pipeline
         stage('Sanity Automation Test') {
             steps {
                 catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Dec2023POMSeries.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=stage"
+                    git 'https://github.com/nathiyaat/POMFramework.git'
+                    bat "mvn clean test -Dsurefire.suiteXmlFile=src/test/resources/testrunners/testng_sanity.xml -Denv=stage"
                     
                 }
             }
