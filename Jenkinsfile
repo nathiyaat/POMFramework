@@ -25,25 +25,9 @@ pipeline
             }
         }
         
-        
-        stage("Deploy to DEV"){
-            steps{
-                echo("deploy to DEV")
-            }
-        }
-        
-        
-                
-        stage('Sanity Automation Tests on DEV') {
-            steps {
-                catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-                    git 'https://github.com/naveenanimation20/Dec2023POMSeries.git'
-                    bat "mvn clean test -Dsurefire.suiteXmlFiles=src/test/resources/testrunners/testng_sanity.xml -Denv=dev"
-                    
-                }
-            }
-        }
-        
+         
+              
+         
         
         
         stage("Deploy to QA"){
