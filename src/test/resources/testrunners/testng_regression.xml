@@ -17,21 +17,29 @@
 		</classes>
 	</test>
 	
-<!-- 	<test name="Registration Page Test">
-	<parameter name="browser" value="chrome" />
+	<!-- <test name="Registration Page Test">
+	<parameter name="browser" value="firefox" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.RegistrationPageTest" />
 		</classes>
-	</test> -->
+	</test>  -->
 	
-	<!-- 	 <test name="Accounts Page Test">
+		 <test name="Accounts Page Test">
 	<parameter name="browser" value="chrome" />
 
 		<classes>
 			<class name="com.qa.opencart.tests.AccountPageTest" />
 		</classes>
-	</test> -->
+	</test> 
+	
+	<test name="Product Info Page Test">
+	<parameter name="browser" value="firefox" />
+
+		<classes>
+			<class name="com.qa.opencart.tests.ProductPageInfoTest" />
+		</classes>
+	</test>
 	
 	 <!-- <test name="Login Page Test firefox">
 	<parameter name="browser" value="firefox" />
